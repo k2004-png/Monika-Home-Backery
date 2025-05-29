@@ -19,13 +19,16 @@
     }
     h1 {
       margin: 0;
+      font-size: 2.5em;
+      text-decoration: underline;
+      font-weight: bold;
     }
-    nav {
+    nav.main-nav {
       background: #fdd8b0;
       padding: 10px;
       text-align: center;
     }
-    nav a {
+    nav.main-nav a {
       margin: 0 15px;
       text-decoration: none;
       color: #5c4033;
@@ -36,8 +39,44 @@
       max-width: 800px;
       margin: auto;
     }
+    section h2 {
+      font-size: 2em;
+      text-decoration: underline;
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
     .menu-item {
+      margin-bottom: 30px;
+    }
+    /* Sub-nav within Menu */
+    .menu-subnav {
       margin-bottom: 20px;
+      text-align: center;
+    }
+    .menu-subnav a {
+      margin: 0 10px;
+      font-weight: bold;
+      color: #5c4033;
+      text-decoration: none;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+    th, td {
+      text-align: left;
+      padding: 6px 10px;
+    }
+    .menu-subtitle {
+      font-weight: bold;
+      margin: 10px 0 5px;
+    }
+    .product-image {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin: 10px 0;
     }
     footer {
       background: #ffe0b2;
@@ -50,10 +89,10 @@
 
 <header>
   <h1>Monika Home Bakery</h1>
-  <p>Freshly Baked Goodness from Our Home to Yours!</p>
+  <p><strong>Freshly Baked Goodness from Our Home to Yours!</strong></p>
 </header>
 
-<nav>
+<nav class="main-nav">
   <a href="#about">About</a>
   <a href="#menu">Menu</a>
   <a href="#contact">Contact</a>
@@ -61,50 +100,104 @@
 
 <section id="about">
   <h2>About Us</h2>
-  <p>We are a home-based bakery specializing in cupcakes, muffins, cakes, pastries and artisan bread made with love and fresh ingredients. Perfect for parties, gifts, or your personal sweet cravings!</p>
+  <p>We are a home-based bakery specializing in cupcakes, muffins, cakes, pastries, and artisan bread made with love and fresh ingredients. Perfect for parties, gifts, or your personal sweet cravings!</p>
 </section>
 
 <section id="menu">
   <h2>Our Menu</h2>
-  <div class="menu-item">
-    <strong> Cake</strong>
-    <p>1- Our speciality</p>
-      </p>Chocolate cake </p>
-      </p>Red velvet cake</p>
-     </p>Truffle cake</p>
-    </p>2-Custom cake</p>
-     </p>contact for the custom made cakes and other prices.</p>
-       </p>(Prices may differ according to design and quantity)  </p>
+
+  <!-- Sub-navigation links for Menu -->
+  <div class="menu-subnav">
+    <a href="#cake">Cake</a>
+    <a href="#cupcake">Cupcake</a>
+    <a href="#mousse">Chocolate Mousse</a>
+    <a href="#brownie">Brownie</a>
+    <a href="#drycake">Dry Cake</a>
   </div>
-  <div class="menu-item">
-    <strong>Cupcake</strong>
-    <p>Chololate cup cake   - 200 rupees (box of 4)</p>
-    </p>                    - 300 rupees (box of 6)</p>
-       </p>Butterscotch cupcake - 200 rupees (box of 4)</p>
-           </p>                 - 300 rupees (box of 6)</p>
-       </p>Blueberry cupcake    - 200 rupees (box of 4)</p>
-           </p>                 - 300 rupees (box of 6)</p>
-       </p>Strawberry cupcake   - 200 rupees (box of 4)</p>
-           </p>                 - 300 rupees (box of 6)</p>
-       </p>Red Velvet Cupcake   - 250 rupees (box of 4)</p>
-           </p>                 - 350 rupees (box of 6)</p>
-       </p>Truffle cupcake      - 250 rupees (box of 4)</p>
-        </p>                    - 350 rupees (box of 6)</p>
-       </p>Mix variety of cupcake in a box - 250 rupees (box of 4)</p>
-      </p>                                 - 350 rupees (box of 6)</p>
+
+  <div id="cake" class="menu-item">
+    <strong class="menu-subtitle">Cake</strong>
+    <img src="https://via.placeholder.com/600x400?text=Cake" alt="Cakes" class="product-image" />
+    <p class="menu-subtitle">1. Our Speciality:</p>
+    <ul>
+      <li>Chocolate Cake</li>
+      <li>Red Velvet Cake</li>
+      <li>Truffle Cake</li>
+    </ul>
+    <p class="menu-subtitle">2. Custom Cakes:</p>
+    <p>Contact us for custom-made cakes and pricing. (Prices may differ according to design and quantity.)</p>
   </div>
-  <div class="menu-item">
-    <strong>Chocolate mousse</strong>
+
+  <div id="cupcake" class="menu-item">
+    <strong class="menu-subtitle">Cupcake</strong>
+    <img src="https://via.placeholder.com/600x400?text=Cupcakes" alt="Cupcakes" class="product-image" />
+    <table>
+      <thead>
+        <tr>
+          <th>Flavor</th>
+          <th>Box of 4</th>
+          <th>Box of 6</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Chocolate</td>
+          <td>₹200</td>
+          <td>₹300</td>
+        </tr>
+        <tr>
+          <td>Butterscotch</td>
+          <td>₹200</td>
+          <td>₹300</td>
+        </tr>
+        <tr>
+          <td>Blueberry</td>
+          <td>₹200</td>
+          <td>₹300</td>
+        </tr>
+        <tr>
+          <td>Strawberry</td>
+          <td>₹200</td>
+          <td>₹300</td>
+        </tr>
+        <tr>
+          <td>Red Velvet</td>
+          <td>₹250</td>
+          <td>₹350</td>
+        </tr>
+        <tr>
+          <td>Truffle</td>
+          <td>₹250</td>
+          <td>₹350</td>
+        </tr>
+        <tr>
+          <td>Mix Variety</td>
+          <td>₹250</td>
+          <td>₹350</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div id="mousse" class="menu-item">
+    <strong class="menu-subtitle">Chocolate Mousse</strong>
+    <img src="https://via.placeholder.com/600x400?text=Chocolate+Mousse" alt="Chocolate Mousse" class="product-image" />
     <p>Soft and tasty chocolate mousse – ₹60 each</p>
   </div>
-  <div class="menu-item">
-    <strong>Brownie</strong>
-    <p>Box of 4 - 250 rupees</p>
+
+  <div id="brownie" class="menu-item">
+    <strong class="menu-subtitle">Brownie</strong>
+    <img src="https://via.placeholder.com/600x400?text=Brownies" alt="Brownies" class="product-image" />
+    <p>Box of 4 – ₹250</p>
   </div>
-  <div class="menu-item">
-    <strong>Dry cake</strong>
-    <p>Chocolate and almond cake - 200 rupees(300gm)</p>
-     </p>Tutti Fruity cake- 180 rupees(300gm)</p>
+
+  <div id="drycake" class="menu-item">
+    <strong class="menu-subtitle">Dry Cake</strong>
+    <img src="https://via.placeholder.com/600x400?text=Dry+Cakes" alt="Dry Cakes" class="product-image" />
+    <ul>
+      <li>Chocolate and Almond Cake – ₹200 (300gm)</li>
+      <li>Tutti Frutti Cake – ₹180 (300gm)</li>
+    </ul>
   </div>
 </section>
 
@@ -115,7 +208,7 @@
 </section>
 
 <footer>
-  <p>&copy; 2025 Monika Home Bakery. All rights reserved.</p>
+  <p>&copy; 2025 <strong>Monika Home Bakery</strong>. All rights reserved.</p>
 </footer>
 
 </body>
