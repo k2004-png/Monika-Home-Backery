@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Monika Home Bakery</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fff8f0;
+      color: #4b2e2e;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #ffe0b2;
+      padding: 20px;
+      text-align: center;
+    }
+    h1 {
+      margin: 0;
+      font-size: 2.5em;
+      text-decoration: underline;
+      font-weight: bold;
+    }
+    nav {
+      background: #fdd8b0;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #5c4033;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    section {
+      display: none;
+      padding: 40px 20px;
+      max-width: 800px;
+      margin: auto;
+    }
+    section.active {
+      display: block;
+    }
+    section h2 {
+      font-size: 2em;
+      text-decoration: underline;
+      font-weight: bold;
+    }
+    .menu-subtitle {
+      font-weight: bold;
+      font-size: 1.2em;
+      margin: 20px 0 10px;
+    }
+    .menu-subnav {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .menu-subnav a {
+      margin: 0 10px;
+      font-weight: bold;
+      color: #5c4033;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    th, td {
+      text-align: left;
+      padding: 6px 10px;
+    }
+    .product-image {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin-bottom: 15px;
+    }
+    footer {
+      background: #ffe0b2;
+      text-align: center;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Monika Home Bakery</h1>
+  <p><strong>Freshly Baked Goodness from Our Home to Yours!</strong></p>
+</header>
+
+<nav>
+  <a onclick="showSection('about')">About</a>
+  <a onclick="showSection('menu')">Menu</a>
+  <a onclick="showSection('contact')">Contact</a>
+</nav>
+
+<section id="about" class="active">
+  <h2>About Us</h2>
+  <p>Welcome to our delightful home-based bakery, where we whip up scrumptious treats that will tantalize your taste buds! Specializing in mouth-watering cupcakes, fluffy muffins, decadent cakes, irresistible pastries, and artisanal bread, every creation is made with love and the freshest ingredients. Whether you're planning a party, looking for the perfect gift, or simply indulging in your own sweet cravings, we have something special just for you! Come taste the magic!</p>
+<img src="https://drive.google.com/file/d/1n-L4L6yMoGgZQD35FvozOGiG9WmKa49w/view?usp=sharing"class="product-image"/>
+</section>
+
+<section id="menu">
+  <h2>Our Menu</h2>
+  <div class="menu-subnav">
+    <a onclick="scrollToItem('cake')">Cake</a>
+    <a onclick="scrollToItem('cupcake')">Cupcake</a>
+    <a onclick="scrollToItem('mousse')">Chocolate Mousse</a>
+    <a onclick="scrollToItem('brownie')">Brownie</a>
+    <a onclick="scrollToItem('drycake')">Dry Cake</a>
+  </div>
+
+  <div id="cake" class="menu-item">
+    <p class="menu-subtitle">Cake</p>
+    <img src="https://via.placeholder.com/600x400?text=Cake" class="product-image" alt="Cake">
+    <p><strong>Our Speciality:</strong></p>
+    <ul>
+      <li>Chocolate Cake</li>
+      <li>Red Velvet Cake</li>
+      <li>Truffle Cake</li>
+    </ul>
+    <p><strong>Custom Cakes:</strong> Contact for custom-made cakes (prices vary by design and size).</p>
+  </div>
+
+  <div id="cupcake" class="menu-item">
+    <p class="menu-subtitle">Cupcake</p>
+    <img src="https://via.placeholder.com/600x400?text=Cupcake" class="product-image" alt="Cupcake">
+    <table>
+      <thead>
+        <tr>
+          <th>Flavor</th>
+          <th>Box of 4</th>
+          <th>Box of 6</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Chocolate</td><td>₹200</td><td>₹300</td></tr>
+        <tr><td>Butterscotch</td><td>₹200</td><td>₹300</td></tr>
+        <tr><td>Blueberry</td><td>₹200</td><td>₹300</td></tr>
+        <tr><td>Strawberry</td><td>₹200</td><td>₹300</td></tr>
+        <tr><td>Red Velvet</td><td>₹250</td><td>₹350</td></tr>
+        <tr><td>Truffle</td><td>₹250</td><td>₹350</td></tr>
+        <tr><td>Mix Variety</td><td>₹250</td><td>₹350</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div id="mousse" class="menu-item">
+    <p class="menu-subtitle">Chocolate Mousse</p>
+    <img src="https://via.placeholder.com/600x400?text=Chocolate+Mousse" class="product-image" alt="Chocolate Mousse">
+    <p>Soft and tasty chocolate mousse – ₹60 each</p>
+  </div>
+
+  <div id="brownie" class="menu-item">
+    <p class="menu-subtitle">Brownie</p>
+    <img src="https://via.placeholder.com/600x400?text=Brownie" class="product-image" alt="Brownie">
+    <p>Box of 4 – ₹250</p>
+  </div>
+
+  <div id="drycake" class="menu-item">
+    <p class="menu-subtitle">Dry Cake</p>
+    <img src="https://via.placeholder.com/600x400?text=Dry+Cake" class="product-image" alt="Dry Cake">
+    <ul>
+      <li>Chocolate & Almond Cake – ₹200 (300g)</li>
+      <li>Tutti Frutti Cake – ₹180 (300g)</li>
+    </ul>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact Us</h2>
+  <p><strong>Phone:</strong> +91-8130098520</p>
+  <p><strong>WhatsApp Orders:</strong> <a href="https://wa.me/918130098520">Click to Chat</a></p>
+</section>
+
+<footer>
+  <p>&copy; 2025 Monika Home Bakery. All rights reserved.</p>
+</footer>
+
+<script>
+  function showSection(id) {
+    const sections = document.querySelectorAll('section');
+    sections.forEach(sec => sec.classList.remove('active'));
+    document.getElementById(id).classList.add('active');
+  }
+
+  function scrollToItem(id) {
+    const item = document.getElementById(id);
+    if (item) item.scrollIntoView({ behavior: 'smooth' });
+  }
+</script>
+
+</body>
+</html>
