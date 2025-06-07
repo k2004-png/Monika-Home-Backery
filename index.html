@@ -124,7 +124,7 @@
 <section id="about" class="active">
   <h2>About Us</h2>
   <p>Welcome to our delightful home-based bakery, where we whip up scrumptious treats that will tantalize your taste buds! Specializing in mouth-watering cupcakes, fluffy muffins, decadent cakes, irresistible pastries, and artisanal bread, every creation is made with love and the freshest ingredients. Whether you're planning a party, looking for the perfect gift, or simply indulging in your own sweet cravings, we have something special just for you! Come taste the magic!</p>
-  <img src="1.jpg"="product-image" />
+  <img src="1.jpg" class="product-image" alt="Delicious baked goods from Monika Home Bakery" />
 </section>
 
 <section id="menu">
@@ -136,45 +136,45 @@
     <a onclick="scrollToItem('brownie')">Brownie</a>
     <a onclick="scrollToItem('drycake')">Dry Cake</a>
     <a onclick="scrollToItem('pastry')">Pastry</a>
+    <a onclick="scrollToItem('biscuits')">Biscuits & Cookies</a>
   </div>
 
- <div id="cake" class="menu-item">
-  <p class="menu-subtitle">Cake</p>
-  <table>
-    <thead>
-      <tr>
-        <th>Flavor</th>
-        <th>Price (500 gm)</th>
-        <th>Price (1 kg)</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr><td>Chocolate Cake</td><td>₹500</td><td>₹1000</td></tr>
-      <tr><td>Red Velvet Cake</td><td>₹600</td><td>₹1200</td></tr>
-      <tr><td>Truffle Cake</td><td>₹550</td><td>₹1100</td></tr>
-      <tr><td>Truffle Cake with Almond</td><td>₹600</td><td>₹1200</td></tr>
-      <tr><td>Blackforest Cake</td><td>₹450</td><td>₹900</td></tr>
-      <tr><td>Pineapple Cake</td><td>₹450</td><td>₹900</td></tr>
-      <tr><td>Strawberry Cake</td><td>₹450</td><td>₹900</td></tr>
-      <tr><td>Blueberry Cake</td><td>₹450</td><td>₹900</td></tr>
-      <tr><td>Butterscotch Cake</td><td>₹450</td><td>₹900</td></tr>
-      <tr><td>Orange Cake (Seasonal)</td><td>₹450</td><td>₹900</td></tr>
-      <tr><td>Mango Cake (Seasonal)</td><td>₹500</td><td>₹1000</td></tr>
-      <tr><td>White Forest Cake</td><td>₹450</td><td>₹900</td></tr>
-      <tr><td>Rabri Cake</td><td>₹650</td><td>₹1300</td></tr>
-      <tr><td>Rasmalai Cake</td><td>₹650</td><td>₹1300</td></tr>
-      <tr><td>Coconut Cake</td><td>₹500</td><td>₹1000</td></tr>
-      <tr><td>Tres Leches Cake</td><td>₹600</td><td>₹1200</td></tr>
-      <tr><td>Mixed Fruit Cake</td><td>₹600</td><td>₹1200</td></tr>
-    </tbody>
-  </table>
-
-  <p><strong>Custom Cakes:</strong> Contact for custom-made cakes (prices vary by design and size).</p>
-</div>
+  <div id="cake" class="menu-item">
+    <p class="menu-subtitle">Cake</p>
+    <table>
+      <thead>
+        <tr>
+          <th>Flavor</th>
+          <th>Price (500 gm)</th>
+          <th>Price (1 kg)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Chocolate Cake</td><td>₹500</td><td>₹1000</td></tr>
+        <tr><td>Red Velvet Cake</td><td>₹600</td><td>₹1200</td></tr>
+        <tr><td>Truffle Cake</td><td>₹550</td><td>₹1100</td></tr>
+        <tr><td>Truffle Cake with Almond</td><td>₹600</td><td>₹1200</td></tr>
+        <tr><td>Blackforest Cake</td><td>₹450</td><td>₹900</td></tr>
+        <tr><td>Pineapple Cake</td><td>₹450</td><td>₹900</td></tr>
+        <tr><td>Strawberry Cake</td><td>₹450</td><td>₹900</td></tr>
+        <tr><td>Blueberry Cake</td><td>₹450</td><td>₹900</td></tr>
+        <tr><td>Butterscotch Cake</td><td>₹450</td><td>₹900</td></tr>
+        <tr><td>Orange Cake (Seasonal)</td><td>₹450</td><td>₹900</td></tr>
+        <tr><td>Mango Cake (Seasonal)</td><td>₹500</td><td>₹1000</td></tr>
+        <tr><td>White Forest Cake</td><td>₹450</td><td>₹900</td></tr>
+        <tr><td>Rabri Cake</td><td>₹650</td><td>₹1300</td></tr>
+        <tr><td>Rasmalai Cake</td><td>₹650</td><td>₹1300</td></tr>
+        <tr><td>Coconut Cake</td><td>₹500</td><td>₹1000</td></tr>
+        <tr><td>Tres Leches Cake</td><td>₹600</td><td>₹1200</td></tr>
+        <tr><td>Mixed Fruit Cake</td><td>₹600</td><td>₹1200</td></tr>
+      </tbody>
+    </table>
+    <p><strong>Custom Cakes:</strong> Contact for custom-made cakes (prices vary by design and size).</p>
+  </div>
 
   <div id="cupcake" class="menu-item">
     <p class="menu-subtitle">Cupcake</p>
-       <table>
+    <table>
       <thead>
         <tr>
           <th>Flavor</th>
@@ -217,6 +217,50 @@
     <p>Contact to order</p>
   </div>
 
+  <div id="biscuits" class="menu-item">
+    <p class="menu-subtitle">Biscuits & Cookies (Rates per 500 gm Box)</p>
+    <table>
+      <thead>
+        <tr>
+          <th>Item</th>
+          <th>Price (₹)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Atta Biscuit</td><td>150</td></tr>
+        <tr><td>Jeera Stick</td><td>150</td></tr>
+        <tr><td>Pure Desi Ghee 100% Gud Atta</td><td>300</td></tr>
+        <tr><td>Pure Desi Ghee 100% Atta Ajwain</td><td>300</td></tr>
+        <tr><td>Ajwain Salt Biscuit</td><td>150</td></tr>
+        <tr><td>Ajwain Jalebi</td><td>150</td></tr>
+        <tr><td>Sweet Jalebi</td><td>150</td></tr>
+        <tr><td>Marble Cookies</td><td>150</td></tr>
+        <tr><td>Fruit Kaaju Biscuit</td><td>150</td></tr>
+        <tr><td>Besan Khatai (Butter)</td><td>180</td></tr>
+        <tr><td>Almond Stick (Butter)</td><td>220</td></tr>
+        <tr><td>Kaaju Pista</td><td>190</td></tr>
+        <tr><td>Butter Kaaju Pista (Butter)</td><td>210</td></tr>
+        <tr><td>Butter Kaaju (Butter)</td><td>210</td></tr>
+        <tr><td>Shahi Badaam</td><td>190</td></tr>
+        <tr><td>Chocolate Crunch</td><td>160</td></tr>
+        <tr><td>Cornflakes (Butter)</td><td>200</td></tr>
+        <tr><td>Honey Oats (Butter)</td><td>200</td></tr>
+        <tr><td>Multigrain Cookies</td><td>180</td></tr>
+        <tr><td>Chocochip Cookies</td><td>180</td></tr>
+        <tr><td>Atta Dry Fruit Biscuit</td><td>230</td></tr>
+        <tr><td>Dry Fruit Cookies</td><td>230</td></tr>
+        <tr><td>Cake Rusk Plain (Butter)</td><td>210</td></tr>
+        <tr><td>Cake Rusk Fruit (Butter)</td><td>210</td></tr>
+        <tr><td>Coconut Cookies</td><td>190</td></tr>
+        <tr><td>Millet Cookies</td><td>190</td></tr>
+        <tr><td>Oats and Raisins</td><td>190</td></tr>
+        <tr><td>Pizza Cookies</td><td>170</td></tr>
+        <tr><td>Chameli Biscuit</td><td>150</td></tr>
+        <tr><td>Gol Kaaju Cookies</td><td>150</td></tr>
+        <tr><td>Gud Till Cookies</td><td>200</td></tr>
+      </tbody>
+    </table>
+  </div>
 </section>
 
 <section id="contact and feedback">
@@ -225,9 +269,8 @@
   <p><strong>WhatsApp Orders:</strong> <a href="https://wa.me/918130098520" target="_blank">Click to Chat</a></p>
 
   <h3>Send Us Your Feedback</h3>
-  <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSch_RuB_eVXD-CjFAtKx_FsQeFWD1ZvGTvyrfVkzTtfIehBNQ/viewform?embedded=true" width="640" height="689" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+  <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSch_RuB_eVXD-CjFAtKx_FsQeFWD1ZvGTvyrfVkzTtfIehBNQ/viewform?embedded=true" width="100%" height="689" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
 </section>
-
 
 <footer>
   <p>&copy; 2025 Monika Home Bakery. All rights reserved.</p>
@@ -257,3 +300,4 @@
 
 </body>
 </html>
+
